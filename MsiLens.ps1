@@ -1,3 +1,47 @@
+
+<#PSScriptInfo
+
+.VERSION 0.1.1
+
+.GUID C0D3600D-79DA-41EA-962F-EB139F9A2A47
+
+.AUTHOR Vadim Dmitriev
+
+.COMPANYNAME
+
+.COPYRIGHT 2026 Vadim Dmitriev
+
+.TAGS msi windows-installer inspection powershell cli
+
+.LICENSEURI https://github.com/vdmdmv/MsiLens/blob/main/LICENSE
+
+.PROJECTURI https://github.com/vdmdmv/MsiLens
+
+.ICONURI
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS
+
+.EXTERNALSCRIPTDEPENDENCIES
+
+.RELEASENOTES
+
+
+.PRIVATEDATA
+
+#>
+
+<# 
+
+.DESCRIPTION 
+ Read-only PowerShell tool for inspecting Windows Installer (MSI) packages. Query tables, properties, files, streams, cabinets, binaries, and signatures; extract file, binary, and cabinet payloads; and automate via one-shot commands or an interactive REPL 
+
+#> 
+
+Param()
+
+
 #Requires -Version 5.1
 
 <#
@@ -146,7 +190,7 @@ param(
 
 Set-StrictMode -Version 2.0
 
-$script:MsiLensVersion = '0.1.0'
+$script:MsiLensVersion = '0.1.1'
 $script:MsiLensProjectUrl = 'https://github.com/vdmdmv/MsiLens'
 $script:MsiLensPathWasNamed = $PSBoundParameters.ContainsKey('Path')
 $script:MsiLensPassThroughOptions = @()
